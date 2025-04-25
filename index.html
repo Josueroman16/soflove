@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Papá de Canela?</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #8b0000;
+    }
+    .button-container {
+      margin-top: 40px;
+    }
+    button {
+      font-size: 1.5em;
+      padding: 15px 30px;
+      margin: 20px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .yes-btn {
+      background-color: #ff69b4;
+      color: white;
+    }
+    .yes-btn:hover {
+      background-color: #ff1493;
+    }
+    .no-btn {
+      background-color: #d3d3d3;
+      color: #666;
+      cursor: not-allowed;
+    }
+    #extra-message {
+      font-size: 1.5em;
+      color: #ff1493;
+      margin-top: 30px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>¿Quieres que Josuesito uwu sea el nuevo papá de Canela la conejita? 🐰💖</h1>
+  <div class="button-container">
+    <button class="yes-btn" onclick="showMessage()">Sí</button>
+    <button class="no-btn" disabled>No</button>
+  </div>
+  <div id="extra-message">¡Sabía que ibas a decir que sí, tekelo uwu! 💕</div>
+
+  <script>
+    function showMessage() {
+      alert('¡Yay! Ahora somos una familia feliz con Canela! 🐰💕');
+      document.getElementById("extra-message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
